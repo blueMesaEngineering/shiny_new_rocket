@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  stock_id: 
+  type: 
+  date: 2019-09-20 22:44:21
+  open: 9.99
+  high: 9.99
+  low: 9.99
+  close: 9.99
+  volume: 1.5
+  openint: 1
+
+two:
+  stock_id: 
+  type: 
+  date: 2019-09-20 22:44:21
+  open: 9.99
+  high: 9.99
+  low: 9.99
+  close: 9.99
+  volume: 1.5
+  openint: 1
