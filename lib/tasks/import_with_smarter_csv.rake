@@ -12,6 +12,7 @@ namespace :import_with_smarter_csv do
     file_names = find_file_names(directory)
     file_names.each do |file_name|
       stock_parameters = { symbol: file_name.split('.', 3)[0], name: '' }
+      # if stock_parameters.errors
       new_stock = Stock.create(stock_parameters)
       puts 'new_stock id: ' + new_stock.id.to_s
       puts 'new_stock symbol: ' + new_stock.symbol
