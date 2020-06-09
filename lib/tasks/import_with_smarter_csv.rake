@@ -27,7 +27,7 @@ namespace :import_with_smarter_csv do
           file_data.each do |index|
             datapoint_hash = index
             datapoint_parameters = stock_id_hash.merge(datapoint_hash)
-            datapoint = Datapoint.create(datapoint_parameters)
+            datapoint = Datapoint.create!(datapoint_parameters)
             datapoint.save
           end
         # end
