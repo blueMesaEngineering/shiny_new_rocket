@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+random_number = Random.new
+
+99.times do |n|
+  stock_id = 1
+  close = 500 + random_number.rand(0..(n/2))
+  volume = random_number.rand(1000..5000)
+  Datapoint.create!(stock_id:   stock_id,
+                    close:      close,
+                    volume:     volume)
+end
