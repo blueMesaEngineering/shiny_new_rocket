@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2019_09_21_024421) do
 
   create_table "datapoints", force: :cascade do |t|
     t.bigint "stock_id"
+    t.string "symbol"
     t.string "type"
     t.datetime "date"
     t.decimal "open"

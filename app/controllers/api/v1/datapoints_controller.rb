@@ -50,7 +50,7 @@ module Api::V1
 
       # Only allow a trusted parameter "white list" through.
       def datapoint_params
-        params.require(:datapoint).permit(:stock_id, :type, :date, :open, :high, :low, :close, :volume, :openint)
+        params.require(:datapoint).permit(:stock_id, :symbol, :type, :date, :open, :high, :low, :close, :volume, :openint)
       end
   end
 

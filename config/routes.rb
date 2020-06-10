@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  # resources :datapoints
-  # resources :stocks
 
   namespace :api do
     namespace :v1 do
